@@ -1,0 +1,172 @@
+body {
+  font-family: "Calibri", sans-serif, Poppins;
+  background: linear-gradient(135deg, #f8dff8, #dbeafe);
+  margin: 0;
+  padding: 0;
+}
+
+.container h1 {
+  padding: 5vh;
+  text-align: center;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.search-box input {
+  width: 300px;
+  padding: 12px 15px;
+  border-radius: 25px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.search-box button {
+  margin-left: 10px;
+  padding: 12px 18px;
+  border-radius: 25px;
+  border: none;
+  background-color: #a78bfa;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #8b5cf6;
+}
+
+.book-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  background: white;
+  padding: 15px;
+  border-radius: 18px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+  text-align: center;
+  cursor: pointer;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100px;
+  height: 150px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background-color: #a78bfa;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.pagination button:hover {
+  background-color: #8b5cf6;
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.message {
+  text-align: center;
+}
+
+.error {
+  color: red;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.modal-content {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 350px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+  text-align: left;
+}
+
+.modal-cover {
+  width: 150px;
+  border-radius: 10px;
+  margin: 15px 0;
+}
+
+.close-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #8b5cf6;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background-color: #7c3aed;
+}
+
+.modal-content h2 {
+  text-align: center;
+}
+
+.modal-cover {
+  display: block;
+  margin: 15px auto;
+}
+
+.close-btn {
+  display: block;
+  margin: 20px auto 0 auto;
+}
+
+.modal-content p {
+  text-align: justify;
+  line-height: 1.6;
+}
